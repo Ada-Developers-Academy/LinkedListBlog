@@ -6,6 +6,6 @@ class HomeController < ApplicationController
 
     # For now get all of the comments
     # maybe implement paging later?
-    @comments = @post.comments || []
+    @comments = @post.comments.to_ary || []
   end
 end
