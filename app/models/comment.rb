@@ -1,4 +1,7 @@
 class Comment < ActiveRecord::Base
+
+  def next
+  end
 end
 
 # Don't modify this
