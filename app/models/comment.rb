@@ -15,7 +15,11 @@ class Comment < ActiveRecord::Base
   end
 
   def to_ary
-
+    if self.next
+      [self] + self.next.to_ary
+    else
+      [self]
+    end
   end
 end
 
