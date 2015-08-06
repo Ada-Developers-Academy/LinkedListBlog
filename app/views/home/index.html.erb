@@ -13,6 +13,19 @@
       <div class="post-comment-body">
         <p><%= c.body %></p>
       </div>
+      <div class="post-comment-controls">
+        <%= button_to "Delete Comment", comments_delete_url(id: c.id, post_id: @post.id),
+                                        method: :delete, data: { confirm: "Are you sure?" } %>
+      </div>
+    <% end %>
+  </div>
+  <div class="post-comments-controls">
+    <%= form_for Comment.new, url: comments_create_url(post_id: @post.id) do |f| %>
+      <%= f.label :name %>:
+      <%= f.text_field :name %><br />
+      <%= f.label :body, "Comment" %>:
+      <%= f.text_area :body %><br />
+      <%= f.submit "Post Comment" %>
     <% end %>
   </div>
 </div>
