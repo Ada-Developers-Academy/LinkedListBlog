@@ -5,6 +5,9 @@ LinkedListBlog::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
 
+  post 'posts/:post_id/comments/' => 'comments#create', as: :comments_create
+  delete 'posts/:post_id/comments/:id' => 'comments#delete', as: :comments_delete
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
