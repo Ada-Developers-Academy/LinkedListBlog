@@ -1,3 +1,5 @@
 class Post < ActiveRecord::Base
-  belongs_to :comments
+
+  def comments
+  end
 end
