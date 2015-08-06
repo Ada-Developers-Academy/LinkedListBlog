@@ -1,0 +1,6 @@
+id,name,body,next_id
+1,"Alison","Why is it important to reduce fragmentation with interleaved allocations?",3
+2,"Yulduz","Computer security can be tricky to get just right",5
+3,"Takako","Alison, long-running processes that need to manage a lot of temporary data (such as an operating system), the fragmentation will build up over time and require copying data from one place to another in a process known as defragmentation. This copying can be very costly in terms of CPU time, leading to temporary hiccups in responsiveness which can escalate into improper behavior in complex systems.",4
+4,"Alison","Thank you for the information!",0
+5,"Gizella","Agreed, but it's well worth it to continually improve our understanding and code!",0
