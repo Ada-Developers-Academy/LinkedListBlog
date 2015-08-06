@@ -1,6 +1,14 @@
 class Post < ActiveRecord::Base
 
   def comments
-    Comment.find(comments_id)
+    comments = []
+    cursor = Comment.find(comments_id)
+
+    while cursor
+      comments << cursor
+      cursor = cursor.next
+    end
+
+    comments
   end
 end

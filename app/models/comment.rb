@@ -1,6 +1,9 @@
 class Comment < ActiveRecord::Base
 
   def next
+    return nil if next_id == 0
+
+    Comment.find(next_id)
   end
 
   def append(comment)
