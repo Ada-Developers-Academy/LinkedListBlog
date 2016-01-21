@@ -5,7 +5,7 @@ This in-class live coding exercise is an example of a very basic blog website in
 The goal with this exercise is to build an implementation of a linked list data structure by explicitly managing the references that ultimately form the _links_ in between each _node_ in the list.
 
 ### What Are References?
-In general, references are any piece of data that allows a computer program to access another piece of data. For example your social security number might be a reference to your tax information in an IRS database. However, the floating point decimal number 5.3 is not a reference because it directly IS the data.
+In general, references are any piece of data that allows a computer program to access another piece of data. For example your social security number might be a reference to your tax information in an IRS database. However, the floating point decimal number `5.3` is not a reference because it directly IS the data.
 
 There are two broad kinds of references: identifiers and locators.
 
